@@ -1,6 +1,6 @@
 ## Overview
 
-Fork from https://github.com/SimulatedGREG/electron-vue, update Electron from 2.x to 11.x
+Fork from https://github.com/SimulatedGREG/electron-vue, update Electron **from 2.x to 11.x**
 
 ### Getting Started
 
@@ -9,7 +9,7 @@ This boilerplate was built as a template for [vue-cli](https://github.com/vuejs/
 ```bash
 # Install vue-cli and scaffold boilerplate
 npm install -g vue-cli
-vue init simulatedgreg/electron-vue my-project
+vue init last0remember/electron-vue my-project
 
 # Install dependencies and run your app
 cd my-project
