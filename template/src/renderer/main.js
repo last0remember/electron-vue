@@ -11,9 +11,10 @@ import router from './router'
 import store from './store'
 {{/isEnabled}}
 
-{{#isEnabled plugins 'vue-electron'}}
-if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
-{{/isEnabled}}
+if (!process.env.IS_WEB) {
+  Vue.prototype.$electron = require('electron')
+}
+
 {{#isEnabled plugins 'axios'}}
 Vue.http = Vue.prototype.$http = axios
 {{/isEnabled}}

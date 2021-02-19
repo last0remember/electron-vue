@@ -77,7 +77,11 @@
   },
 {{/if_eq}}
   "dependencies": {
-    "vue": "^2.5.16"{{deps plugins}}
+    "axios": "^0.21.1",
+    "vue": "^2.6.12",
+    "vue-router": "^3.5.1",
+    "vuex": "^3.6.2",
+    "electron-store": "^7.0.2"
   },
   "devDependencies": {
     "ajv": "^6.5.0",
@@ -93,16 +97,17 @@
     "copy-webpack-plugin": "^4.5.1",
     "cross-env": "^5.1.6",
     "css-loader": "^0.28.11",
+    "deepmerge": "^4.2.2",
     "del": "^3.0.0",
     "devtron": "^1.4.0",
-    "electron": "^2.0.4",
-    "electron-debug": "^1.5.0",
-    "electron-devtools-installer": "^2.2.4",
+    "electron": "^11.2.3",
+    "electron-debug": "^3.2.0",
+    "electron-devtools-installer": "^3.1.1",
     {{#if_eq builder 'packager'}}
     "electron-packager": "^12.1.0",
     "electron-rebuild": "^1.8.1",
     {{else}}
-    "electron-builder": "^20.19.2",
+    "electron-builder": "^22.9.1",
     {{/if_eq}}
     {{#eslint}}
     "babel-eslint": "^8.2.3",
@@ -155,11 +160,11 @@
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
     "vue-html-loader": "^1.2.4",
-    "vue-loader": "^15.2.4",
-    "vue-style-loader": "^4.1.0",
-    "vue-template-compiler": "^2.5.16",
-    "webpack-cli": "^3.0.8",
+    "vue-loader": "^15.9.6",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.12",
     "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4",
     "webpack-hot-middleware": "^2.22.2",
     "webpack-merge": "^4.1.3"
